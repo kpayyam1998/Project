@@ -1,0 +1,73 @@
+{
+    "pages": [
+      {
+        "title": "Home",
+        "copyService": "newCopy",
+        "page_type": "edit",
+        "seo_keywords": ["primary keyword: healthcare knowledge", "secondary keyword: freelance writing"],
+        "content": "<p>Enhancing the knowledge of healthcare for all – one article at a time.</p><p>MISSION<br>To provide those in the Healthcare Community with current, up-to-date, trending medical and surgical information.<br>To help enhance the healthcare knowledge of the general population to afford self-advocating for a healthier lifestyle.</p><p>While relatively new to the freelance arena, I have been a Registered Nurse for the past 49 years. I have vast experience in Administration, Critical Care and Research in Critical Care. My Research experience has afforded me countless co-authored Abstract, Editorial and Manuscript publications in major medical and surgical journals internationally, as well as presentations at Critical Care Symposiums. Liaison to Physician and Chief of Medicine.</p>",
+        "pointOfView": "first",
+        "notes": "<p>Tagline: Enhancing the knowledge of healthcare for all – one article at a time.</p>",
+        "conveyMessages": "",
+        "conveyanceOther": "",
+        "customerAction": "Focus on content",
+        "copyRequestDescription": "a"
+      },
+      {
+        "title": "About",
+        "copyService": "newCopy",
+        "page_type": "edit",
+        "seo_keywords": ["primary keyword: healthcare writer", "secondary keyword: freelance nursing"],
+        "content": "<p>About Meet John, Freelance Healthcare Writer With nearly five decades of dedicated service as a Registered Nurse, I bring a wealth of experience and expertise to the world of freelance healthcare writing. While I may be relatively new to the freelance arena, my journey in healthcare has been one of continual learning, growth, and innovation. Throughout my career, I have held pivotal roles in Administration, Critical Care, and Research within the healthcare landscape. From managing complex healthcare systems to providing frontline critical care to patients in need, my diverse experiences have shaped my understanding of the intricacies of the healthcare industry. One of the highlights of my career has been my extensive involvement in research within Critical Care. This involvement has led to numerous co-authored Abstracts, Editorials, and Manuscript publications in esteemed medical and surgical journals worldwide. Additionally, I have had the privilege of presenting my research findings at prestigious Critical Care Symposiums, contributing to the ongoing dialogue and advancement within the field. As a liaison to Physicians and serving as Chief of Medicine, I have fostered collaborative relationships and facilitated interdisciplinary communication to ensure the highest standards of patient care. My dedication to bridging gaps between healthcare professionals has been instrumental in driving positive outcomes and fostering a culture of excellence. Now, as a freelance healthcare writer, I am passionate about leveraging my wealth of knowledge and expertise to craft compelling, insightful content that educates, informs, and inspires. Whether it's distilling complex medical concepts into accessible articles, providing evidence-based insights for healthcare publications, or creating engaging content for healthcare brands, I am committed to delivering content of the highest caliber. With a deep-rooted commitment to advancing healthcare through the power of words, I am excited to collaborate with clients who share a vision for driving positive change within the healthcare industry. Let's embark on a journey of discovery, learning, and innovation together.</p>",
+        "pointOfView": "",
+        "notes": "",
+        "conveyMessages": "",
+        "conveyanceOther": "",
+        "customerAction": "",
+        "copyRequestDescription": ""
+      },
+      {
+        "title": "Publications",
+        "copyService": "",
+        "page_type": "view",
+        "seo_keywords": ["primary keyword: healthcare publications", "secondary keyword: medical journals"],
+        "content": "<p>Publications</p><p class='font-weight-bold'>Stay informed with  timely updates on healthcare regulations, policies, and industry changes. Our publications ensure you are always up-to-date with the latest developments and their implications. A     ccess our extensive research reports that provide valuable data, analysis, and insights into various aspects of healthcare. Our reports are designed to help you make informed decisions and stay ahead in the field</p><p class='font-weight-bold'>Access our extensive research reports that provide valuable data, analysis, and insights into various aspects of healthcare. Our reports are designed to help you make informed decisions and stay ahead in the field</p></p>",
+        "pointOfView": "",
+        "notes": "",
+        "conveyMessages": "",
+        "conveyanceOther": "",
+        "customerAction": "",
+        "copyRequestDescription": ""
+      },
+      {
+        "title": "Contact",
+        "copyService": "",
+        "page_type": "view",
+        "seo_keywords": ["primary keyword: contact XYZ Consulting", "secondary keyword: Bill"],
+        "content": "<p>Contact Bill, PA</p><p>Additional Page Notes: Standard contact page with contact form, designer discretion on this page for layout and images</p>",
+        "pointOfView": "",
+        "notes": "",
+        "conveyMessages": "",
+        "conveyanceOther": "",
+        "customerAction": "",
+        "copyRequestDescription": ""
+      },
+      {
+        "title": "Book A Consultation",
+        "copyService": "",
+        "page_type": "view",
+        "seo_keywords": ["primary keyword: consultation", "secondary keyword: healthcare services"],
+        "content": "<p>Book A Consultation</p>",
+        "pointOfView": "",
+        "notes": "",
+        "conveyMessages": "",
+        "conveyanceOther": "",
+        "customerAction": "",
+        "copyRequestDescription": ""
+      }
+    ],
+    "businessName": "XYZ CONSULTING LLC",
+    "Country": "US",
+    "product_type": "non-care",
+    "business_info": "domain: \nhasTagline: \ndescription: freelace writing and healthcare \ntimeInBusiness: \nbusinessTypeName: Consulting \nbizWaysOnline: \nlocalAreas: Eastern and Central Confetti , USA \nkeyTerms: provide publications \ngoal: other \ngoalDescription: \ntargetAudience: \nbizEmails: \nBusiness Hours: No, don't show my hours \nshowBizHours: Sunday: closed Monday: 08:00 - 18:00 Tuesday: 08:00 - 18:00 Wednesday: 08:00 - 18:00 Thursday: 08:00 - 18:00 Friday: 08:00 - 18:00 Saturday: 08:00 - 18:00 \nphone: \nshowBizFullAddress: yes \ncountry_region: US \naddress1: 195 Owen Street, Prestonsdurg \ncity: Kentucky \nstate: \npostalCode: 41653 \nhasCompetitors: \n"
+  }

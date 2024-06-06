@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" href="../static/css/style.css"> 
+    <style>
+        body {
+            background-image: url("../static/images/medical_image.avif");
+            background-size: cover; 
+            background-position: center; 
+        }
+
+        .card {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: 0.3s;
+            border-radius: 10px;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .card-title {
+            font-weight: bold;
+            text-align: center; /* Center the title */
+        }
+
+        .btn-primary {
+            background-color: #007bff; 
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .section-container {
+            padding: 4rem 0;
+        }
+
+        .section-container.first-section {
+            background-color: #f2f2f2; 
+            padding-bottom: 4rem; /* Add padding to accommodate the button */
+        }
+
+        .section-container.second-section {
+            background-color: #e0ffff; 
+        }
+
+        .card-wrapper {
+            padding: 2rem;
+            margin-bottom: 2rem; /* Add margin below the card */
+        }
+
+        .cta-button {
+            /* Remove previous positioning */
+            /* bottom: 2rem;
+            left: -3rem; */
+            background-color: #90EE90; /* Light green */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
+            text-align: center; /* Center the button text */
+            display: block; /* Make the button take up the full width of its container */
+            margin: 0 auto; /* Center the button horizontally */
+            padding: 1rem 2rem; /* Adjust padding as needed */
+            color: black;
+        }
+
+        .content-title {
+            font-weight: 600; /* Medium bold */
+            text-align: center; /* Center the content title */
+            margin-bottom: 1rem; /* Add space below the title */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .section-content {
+                flex-direction: column; /* Stack elements vertically */
+            }
+
+            .card-wrapper {
+                margin-right: 0; /* Remove margin on smaller screens */
+            }
+
+            .cta-button {
+                margin-top: 2rem; /* Add margin to separate from card */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="py-3">
+        <div class="container">
+            <nav class="nav justify-content-center">
+                <a href="/" class="nav-link text-dark">Dashboard</a> 
+                <a href="/about" class="nav-link text-dark">About Us</a>
+                <a href="/publications" class="nav-link text-dark">Our Publications</a>
+                <a href="/contact" class="nav-link text-dark">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="py-5">
+        <div class="container">
+            <section class="section-container first-section">
+                <div class="card-wrapper">
+                    {% for detail in content_list %}
+
+                        <h4 class="card-title mb-3">Meta Title: {{ detail['meta_title'] }}</h4>
+                        <p class="mb-4">Meta Description: {{ detail.meta_description }}</p>
+                        <h4 class="card-title mb-3 ">Hero Title: {{ detail.h1_title }}</h4>
+                        <p class="mb-4 ">Content: {{ detail.h1_content }}</p>
+                        <p class="mb-4 font-weight-bold">Title: {{ detail.h2_title }}</p>
+                        <p class="mb-4 ">Hero Text: {{ detail.h2_content }}</p>
+                        <p class="mb-4">Hero Text: {{ detail.leading_sentence }}</p>
+                    {% endfor %}
+                </div>
+                <a href="/contact" class="btn btn-primary btn-lg cta-button">{{cta}}</a>    
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light py-3 fixed-bottom"> 
+        <div class="container">
+            <p class="text-center mb-0">© {{business_data.businessName}}</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

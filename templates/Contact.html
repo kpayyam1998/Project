@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" href="../static/css/style.css"> 
+    <style>
+        body {
+            /* background-image: url("../static/images/medical_image.avif"); */
+            background-size: cover; 
+            background-position: center; 
+        }
+
+        .contact-section {
+            padding: 6rem 0; /* Increased padding for a larger section */
+            text-align: center;
+        }
+
+        .title-center {
+            font-size: 2.5rem; /* Larger title */
+            font-weight: 600; 
+            margin-bottom: 1rem;
+        }
+
+        .contact-details {
+            margin-bottom: 3rem; /* Space between business details and location */
+            padding: 2rem; /* Add padding to the contact details */
+            border-radius: 8px; /* Add rounded corners */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Box shadow */
+        }
+
+        .contact-form {
+            margin: 2rem auto; 
+            max-width: 500px; 
+            padding: 2rem;
+            background-color: #f2f2f2; /* Light background for the form */
+            border-radius: 8px;
+        }
+
+        .form-field {
+            margin-bottom: 1rem;
+        }
+
+        .form-field input {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-field input:focus {
+            outline: none;
+            border-color: #007bff; /* Blue border on focus */
+        }
+
+        .contact-form button {
+            background-color: #007bff; /* Blue background */
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .contact-section {
+                padding: 4rem 0; /* Reduced padding on smaller screens */
+            }
+
+            .contact-form {
+                max-width: 90%; 
+            }
+
+            .contact-details {
+                text-align: left; /* Left-align details on mobile */
+            }
+
+            .contact-details p {
+                margin-bottom: 0.5rem; /* Reduced spacing between details */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="py-3">
+        <div class="container">
+            <nav class="nav justify-content-center">
+                <a href="/" class="nav-link text-dark">Dashboard</a> 
+                <a href="/about" class="nav-link text-dark">About Us</a>
+                <a href="/publications" class="nav-link text-dark">Our Publications</a>
+                <a href="/contact" class="nav-link text-dark">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contact-section">
+        <h1 class="title-center">{{business_data.businessName}}</h1>
+        <p class="text-center">Looking to connect with our specialized healthcare consulting experts?</p>
+        <p class="text-center">Reach out to us for personalized healthcare consulting services in PA. We're here to help!</p>
+
+        <div class="row">
+            <div class="col-md-6 contact-details box-shadow">
+                <h2 class="pb-2">Contact {{business_data.businessName}}  </h2>
+                <p class="text-center ">Name:XXXXX</p>
+                <p class="text-center">Email:{{business_data.businessName}}@gmail.com</p>
+                <p class="text-center">Ph:+91 99876 78908</p>
+            </div>
+            <div class="col-md-6 contact-details box-shadow">
+                <h2>Location</h2>
+                <p class="text-center">{{contact_business.localAreas}} ,{{contact_business.country_region}}</p>
+                <p class="text-center">Address:{{contact_business.address1}},{{contact_business.city}}</p>
+                <p class="text-center">State:{{contact_business.Kentucky}},Postal_code:{{contact_business.postalCode}}</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-dark text-light py-3 fixed-bottom"> 
+        <div class="container">
+            <p class="text-center mb-0">@ {{business_data.businessName}}</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

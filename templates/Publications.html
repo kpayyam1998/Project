@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" href="../static/css/style.css"> 
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif; 
+            background-color: #f4f4f4; 
+            color: #333;
+            /* background-image: url("../static/images/medical_image.avif"); */
+            background-size: cover; 
+            background-position: center; 
+        }
+
+        .section-container {
+            padding: 4rem 0;
+            text-align: center; /* Center content for this section */
+        }
+
+        .section-container.first-section {
+            background-color: #fff; 
+            padding-bottom: 6rem; /* More padding for the contact section */
+        }
+
+        .card-wrapper {
+            max-width: 800px; 
+            margin: 0 auto;
+            padding: 3rem;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+
+        .card-title {
+            font-size: 2.5rem; 
+            font-weight: 700; 
+            margin-bottom: 1rem;
+            color: #020303; /* Blue color for title */
+        }
+
+        .card-subtitle {
+            font-size: 1.2rem;
+            /* font-weight: 600; */
+            margin-bottom: 2rem; 
+            color: #767676;
+        }
+
+        .card-content {
+            line-height: 1.6; 
+            font-size: 1.2rem;
+            /* font-weight: 600; */
+            margin-bottom: 2rem; 
+            color: #767676; 
+        }
+
+        .btn-primary {
+            background-color: #007bff; 
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        /* Header Styling */
+        header {
+            /* background-color: #fff;  */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+        }
+
+        .nav-link {
+            color: #333; /* Darker text color for navigation */
+        }
+
+        .nav-link:hover {
+            color: #007bff; /* Blue color on hover */
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333; 
+            color: #fff; 
+        }
+
+        /* Publication Section */
+        .publication-section {
+            padding: 6rem 0;
+            text-align: center;
+        }
+
+        .publication-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .publication-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .publication-list li {
+            margin-bottom: 1.5rem;
+        }
+
+        .publication-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #007bff;
+            margin-bottom: 0.5rem;
+        }
+
+        .publication-description {
+            font-size: 1rem;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .publication-button {
+            background-color: #007bff; 
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .publication-button:hover {
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .card-wrapper {
+                padding: 2rem; 
+                max-width: 90%; 
+            }
+
+            .card-title {
+                font-size: 2rem; 
+            }
+
+            .publication-container {
+                max-width: 90%; 
+            }
+
+            .publication-list li {
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="py-3">
+        <div class="container">
+            <nav class="nav justify-content-center">
+                <a href="/" class="nav-link text-dark">Dashboard</a> 
+                <a href="/about" class="nav-link text-dark">About Us</a>
+                <a href="/publications" class="nav-link text-dark">Our Publications</a>
+                <a href="/contact" class="nav-link text-dark">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="py-5">
+        <div class="container">
+            <section class="publication-section">
+                <div class="publication-container">
+                    <h2 class="title-center">Our Publications</h2>
+                    <ul class="publication-list">
+                        
+                    </ul>
+                </div>
+            </section>
+            <h4 class="card-title mb-3">{{ content_list.title }} - {{content_list.subtitle}}</h4>
+                    <p class="card-subtitle mb-4">Explore expert healthcare publications from {{ content_list.title }} for the latest insights, trends, and in-depth analysis in the healthcare industry. Engage with our comprehensive articles, research reports, and expert opinions to stay informed and ahead of the curve. Discover the latest healthcare regulations, policies, and innovations through our well-researched content. Connect with leading experts and gain valuable knowledge that can help you make informed decisions in your healthcare practice. Whether you are a healthcare professional, policymaker, or enthusiast, our publications offer valuable information to enhance your understanding and expertise in the field. Engage with {{ content_list.title }} today and transform your approach to healthcare with our expert insights and guidance</p>
+                    <p class="card-content mb-4 ">{{ content_list.content | safe}}</p>
+            
+
+           
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light py-3 fixed-bottom"> 
+        <div class="container">
+            <p class="text-center mb-0">© {{business_data.businessName}}</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

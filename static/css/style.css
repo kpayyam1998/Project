@@ -1,0 +1,94 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Use Poppins font family */
+     /* Make all body text bold */
+}
+
+h1, h2, h3, h4, h5 { /* Make all headings bold */
+    font-weight: bold;
+}
+
+h1 { 
+    font-size: 2.5em; /* Reduced font size for the title */
+}
+
+h2 { 
+    font-size: 1.8em; /* Larger font size for headings */
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+nav ul {
+    background-color: #90EE90; /* Light green background for nav */
+    box-shadow: 0 2px 5px rgba(144, 238, 144, 0.5); /* Light green shadow */
+    border-radius: 5px;
+    padding: 10px 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+nav ul li a{
+    font:black;
+}
+
+.btn-success { 
+    background-color: #90EE90; /* Light green for button */
+    border: none; 
+}
+
+.btn-success:hover {
+    background-color: #7CFC00; /* Darker green on hover */
+}
+
+header {
+    background-color: #90EE90; /* Light green background for header */
+    box-shadow: 0 2px 5px rgba(144, 238, 144, 0.5); /* Light green shadow */
+    border-radius: 5px;
+}
+
+#About
+
+/* Section Styling */
+.section-container {
+    padding: 50px 0;
+    text-align: center; /* Center align content within the section */
+}
+
+.section-content {
+    align-items: center; /* Center vertically align items within the row */
+}
+
+/* Card Wrapper Styling */
+.card-wrapper {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Left align text within the card */
+}
+
+
+footer {
+    font-weight: bold; /* Make footer text bold */
+}
+
+.card-body { 
+    font-weight: 500; /* Make card body text bolder */
+}
+
+
+
+
+/* Style for header links */
+.nav-link.text-dark {
+    color: black; /* Set the link text color to black */
+}
+
+
+/* contact section */
+    

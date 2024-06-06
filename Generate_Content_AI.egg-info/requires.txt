@@ -1,0 +1,11 @@
+Flask==3.0.3
+openai
+langchain==0.2.1
+langchain-community==0.2.1
+python-dotenv==1.0.1
+streamlit
+streamlit_chat
+pypdf
+tiktoken
+faiss-cpu
+pyspellchecker
